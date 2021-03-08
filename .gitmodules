@@ -1,0 +1,6 @@
+[submodule "doc/kendryte-doc-standalone-programming-guide"]
+	path = doc/kendryte-doc-standalone-programming-guide
+	url = git@github.com:kendryte/kendryte-doc-standalone-programming-guide.git
+[submodule "lib/tm1638"]
+	path = lib/tm1638
+	url = git@github.com:sreedevk/tm1638-driver-kendryte-sdk.git
