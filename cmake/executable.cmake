@@ -6,6 +6,7 @@ if (NOT BUILDING_SDK)
     else()
         header_directories(${SDK_ROOT}/lib)
         add_subdirectory(${SDK_ROOT}/lib)
+        add_subdirectory(${SDK_ROOT}/third_party)
     endif()
 endif ()
 
