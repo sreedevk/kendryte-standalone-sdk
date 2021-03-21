@@ -35,8 +35,6 @@ add_compile_flags(CXX -std=gnu++17)
 if (BUILDING_SDK)
     add_compile_flags(BOTH
             -Wall
-            -Werror=all
-            -Wno-error=unused-function
             -Wno-error=unused-but-set-variable
             -Wno-error=unused-variable
             -Wno-error=deprecated-declarations
