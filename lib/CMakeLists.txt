@@ -23,12 +23,12 @@ FILE(GLOB_RECURSE LIB_SRC
         "${CMAKE_CURRENT_LIST_DIR}/bsp/*.S"
         "${CMAKE_CURRENT_LIST_DIR}/drivers/*.S"
         "${CMAKE_CURRENT_LIST_DIR}/utils/*.S"
-        "${CMAKE_CURRENT_LIST_DIR}/u8g2/csrc/*.c"
-        "${CMAKE_CURRENT_LIST_DIR}/u8g2/csrc/*.h"
         "${CMAKE_CURRENT_LIST_DIR}/tm1638/*.h"
         "${CMAKE_CURRENT_LIST_DIR}/tm1638/*.c"
-        "${CMAKE_CURRENT_LIST_DIR}/oled/*.h"
-        "${CMAKE_CURRENT_LIST_DIR}/oled/*.c"
+        "${CMAKE_CURRENT_LIST_DIR}/u8g2/csrc/*.c"
+        "${CMAKE_CURRENT_LIST_DIR}/u8g2/csrc/*.h"
+        "${CMAKE_CURRENT_LIST_DIR}/u8g2-kendryte-sdk-hal/*.c"
+        "${CMAKE_CURRENT_LIST_DIR}/u8g2-kendryte-sdk-hal/*.h"
         )
 
 FILE(GLOB_RECURSE ASSEMBLY_FILES

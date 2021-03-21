@@ -10,3 +10,6 @@
 [submodule "lib/oled"]
 	path = lib/oled
 	url = git@github.com:sreedevk/u8g2-hal-kendryte-sdk-k210.git
+[submodule "lib/u8g2-kendryte-sdk-hal"]
+	path = lib/u8g2-kendryte-sdk-hal
+	url = git@github.com:sreedevk/u8g2-kendryte-sdk-hal.git
