@@ -29,6 +29,10 @@ FILE(GLOB_RECURSE LIB_SRC
         "${CMAKE_CURRENT_LIST_DIR}/u8g2/csrc/*.h"
         "${CMAKE_CURRENT_LIST_DIR}/u8g2-kendryte-sdk-hal/*.c"
         "${CMAKE_CURRENT_LIST_DIR}/u8g2-kendryte-sdk-hal/*.h"
+        "${CMAKE_CURRENT_LIST_DIR}/ili9341/*.h"
+        "${CMAKE_CURRENT_LIST_DIR}/ili9341/*.c"
+        "${CMAKE_CURRENT_LIST_DIR}/mems-mic/*.h"
+        "${CMAKE_CURRENT_LIST_DIR}/mems-mic/*.c"
         )
 
 FILE(GLOB_RECURSE ASSEMBLY_FILES
