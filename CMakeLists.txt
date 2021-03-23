@@ -1,4 +1,4 @@
-### This file is used for build example projects.
+# DO NOT MODIFY THIS FILE, IT WILL BE OVERRIDE!!!
 
 # set this will supress some warnings
 set(BUILDING_SDK "yes" CACHE INTERNAL "")
@@ -26,6 +26,6 @@ add_subdirectory(lib)
 
 # compile project
 add_source_files(src/${PROJ}/*.c src/${PROJ}/*.s src/${PROJ}/*.S src/${PROJ}/*.cpp)
-add_source_files(kendryte-standalone-demo/${PROJ}/*.c kendryte-standalone-demo/${PROJ}/*.s kendryte-standalone-demo/${PROJ}/*.S kendryte-standalone-demo/${PROJ}/*.cpp)
+add_source_files(${SDK_ROOT}/${PROJ}/*.c ${SDK_ROOT}/${PROJ}/*.s ${SDK_ROOT}/${PROJ}/*.S ${SDK_ROOT}/${PROJ}/*.cpp)
 include(./cmake/executable.cmake)
 
