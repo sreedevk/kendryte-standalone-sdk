@@ -1,11 +1,15 @@
 # Kendryte K210 standalone SDK
 
-[![Build Status](https://travis-ci.org/kendryte/kendryte-standalone-sdk.svg)](https://travis-ci.org/kendryte/kendryte-standalone-sdk)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+This is a fork of the official `kendryte-standalone-sdk` repository with a bunch of peripheral drivers & utililities.
+The following is a list of additional Drivers Available in this fork.
 
-This SDK is for Kendryte K210 without OS support.
-If you have any questions, please be free to contact us.
+1. U8G2 Kendryte K210 HAL   - https://github.com/sreedevk/u8g2-kendryte-sdk-hal
+2. LCD1602 Driver for K210  - https://github.com/sreedevk/lcd-1602-kendryte-sdk
+3. TM1638 Driver for K210   - https://github.com/sreedevk/tm1638-driver-kendryte-sdk
 
+More drivers are being added & will be available in future.
+
+The following is the documentation from the official `kendryte-standalone-sdk`repostiory:
 ## Usage
 
 If you want to start a new project, for instance, `hello_world`, you only need to:
