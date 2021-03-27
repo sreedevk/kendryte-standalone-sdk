@@ -33,6 +33,8 @@ FILE(GLOB_RECURSE LIB_SRC
         "${CMAKE_CURRENT_LIST_DIR}/ili9341/*.c"
         "${CMAKE_CURRENT_LIST_DIR}/mems-mic/*.h"
         "${CMAKE_CURRENT_LIST_DIR}/mems-mic/*.c"
+        "${CMAKE_CURRENT_LIST_DIR}/lcd1602/*.h"
+        "${CMAKE_CURRENT_LIST_DIR}/lcd1602/*.c"
         )
 
 FILE(GLOB_RECURSE ASSEMBLY_FILES
