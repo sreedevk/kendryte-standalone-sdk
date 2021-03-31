@@ -9,8 +9,9 @@ The following is a list of additional Drivers Available in this fork.
 
 More drivers are being added & will be available in future.
 
-The following is the documentation from the official `kendryte-standalone-sdk`repostiory:
 ## Usage
+
+### Creating a New Project
 
 If you want to start a new project, for instance, `hello_world`, you only need to:
 
@@ -45,10 +46,23 @@ mkdir build && cd build
 cmake -G "MinGW Makefiles" ../../../..
 make
 ```
-
 You will get 2 key files, `hello_world` and `hello_world.bin`.
 
 1. If you are using JLink to run or debug your program, use `hello_world`
 2. If you want to flash it in UOG, using `hello_world.bin`, then using flash-tool(s) burn <ProjectName>.bin to your flash.
 
 This is very important, don't make a mistake in files.
+
+### Creating & adding a Third Party Library
+If you are interested in developing third party libraries to be used with fork of kendryte-standalone-sdk, 
+you can use this template repository:  
+[KENDRYTE SDK THIRD PARTY MODULE TEMPLATE](https://github.com/sreedevk/kendryte-sdk-library-template)
+
+or you can add the CMakeLists.third_party.example.txt as `CMakeLists.txt` in the root of your library directory. make sure to add all the header files in an `include folder`
+
+Once you have the third party library ready, you can add it to this repository by simply running:  
+```bash
+git submodule add {your-lib-repo-link} third_party/{your-lib-name}/
+```
+
+and recompiling your code.
