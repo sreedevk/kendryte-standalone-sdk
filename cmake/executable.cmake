@@ -27,6 +27,7 @@ if (EXISTS ${SDK_ROOT}/src/${PROJ}/ai/libai.a)
             gcc m c
             -Wl,--whole-archive
             kendryte
+            tplibs
             ai
             -Wl,--no-whole-archive
             -Wl,--end-group
@@ -37,6 +38,7 @@ else ()
             gcc m c
             -Wl,--whole-archive
             kendryte
+            tplibs
             -Wl,--no-whole-archive
             -Wl,--end-group
             )

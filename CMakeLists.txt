@@ -19,11 +19,13 @@ project(${PROJ} C CXX ASM)
 # config self use headers
 include(./cmake/macros.internal.cmake)
 header_directories(${SDK_ROOT}/lib)
+header_directories(${SDK_ROOT}/third_party)
 header_directories(src/${PROJ})
 header_directories(src/${PROJ}/include)
 header_directories(kendryte-standalone-demo/${PROJ})
 # build library first
 add_subdirectory(lib)
+add_subdirectory(third_party)
 
 # compile project
 add_source_files(src/${PROJ}/*.c src/${PROJ}/*.s src/${PROJ}/*.S src/${PROJ}/*.cpp)
