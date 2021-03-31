@@ -4,3 +4,12 @@
 [submodule "third_party/lcd1602"]
 	path = third_party/lcd1602
 	url = git@github.com:sreedevk/lcd-1602-kendryte-sdk.git
+[submodule "third_party/u8g2"]
+	path = third_party/u8g2
+	url = git@github.com:sreedevk/u8g2.git
+[submodule "third_party/u8g2_kendryte_hal"]
+	path = third_party/u8g2_kendryte_hal
+	url = git@github.com:sreedevk/u8g2-kendryte-sdk-hal.git
+[submodule "third_party/tm1638"]
+	path = third_party/tm1638
+	url = git@github.com:sreedevk/tm1638-driver-kendryte-sdk.git
