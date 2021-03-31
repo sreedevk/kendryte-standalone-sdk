@@ -13,6 +13,3 @@
 [submodule "lib/u8g2-kendryte-sdk-hal"]
 	path = lib/u8g2-kendryte-sdk-hal
 	url = git@github.com:sreedevk/u8g2-kendryte-sdk-hal.git
-[submodule "lib/lcd1602"]
-	path = lib/lcd1602
-	url = git@github.com:sreedevk/lcd-1602-kendryte-sdk.git
