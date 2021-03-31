@@ -1,12 +1,6 @@
 [submodule "doc/kendryte-doc-standalone-programming-guide"]
 	path = doc/kendryte-doc-standalone-programming-guide
 	url = git@github.com:kendryte/kendryte-doc-standalone-programming-guide.git
-[submodule "lib/u8g2"]
-	path = lib/u8g2
-	url = git@github.com:olikraus/u8g2.git
 [submodule "lib/oled"]
 	path = lib/oled
 	url = git@github.com:sreedevk/u8g2-hal-kendryte-sdk-k210.git
-[submodule "lib/u8g2-kendryte-sdk-hal"]
-	path = lib/u8g2-kendryte-sdk-hal
-	url = git@github.com:sreedevk/u8g2-kendryte-sdk-hal.git
