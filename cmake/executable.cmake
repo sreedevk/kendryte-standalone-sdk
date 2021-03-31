@@ -16,11 +16,10 @@ removeDuplicateSubstring(${CMAKE_CXX_FLAGS} CMAKE_CXX_FLAGS)
 message("SOURCE_FILES=${SOURCE_FILES}")
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-
 set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE C)
 
 if (EXISTS ${SDK_ROOT}/src/${PROJ}/ai/libai.a)
-  if(EXISTS tplibs)
+  if(TARGET tplibs)
     add_library(ai STATIC IMPORTED)
     set_property(TARGET ai PROPERTY IMPORTED_LOCATION ${SDK_ROOT}/src/${PROJ}/ai/libai.a)
     target_link_libraries(${PROJECT_NAME}
@@ -47,7 +46,7 @@ if (EXISTS ${SDK_ROOT}/src/${PROJ}/ai/libai.a)
       )
   endif ()
 else ()
-  if(EXISTS tplibs)
+  if(TARGET tplibs)
     target_link_libraries(${PROJECT_NAME}
       -Wl,--start-group
       gcc m c
